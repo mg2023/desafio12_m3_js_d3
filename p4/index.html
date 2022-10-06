@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Javascript M3 D3 parte 4</title>
+  </head>
+
+  <style>
+    .caja {
+      width: 200px;
+      height: 200px;
+      border: 2px solid violet;
+      float: left;
+    }
+  </style>
+
+  <body>
+    <div class="caja" id="caja1" style="background-color: green"></div>
+    <div class="caja" id="caja2" style="background-color: red"></div>
+    <div class="caja" id="caja3" style="background-color: blue"></div>
+    <div class="caja" id="caja4" style="background-color: yellow"></div>
+
+    <script>
+      let color;
+      document.addEventListener("keydown", function (event) {
+        if (event.key === "a") {
+          color = "#098974";
+        } else if (event.key === "s") {
+          color = "#895647";
+        } else if (event.key === "d") {
+          color = "#894567";
+        }
+      });
+      document
+        .querySelector("#caja1")
+        .addEventListener("click", function (event) {
+          event.target.style.backgroundColor = color;
+        });
+      document
+        .querySelector("#caja2")
+        .addEventListener("click", function (event) {
+          event.target.style.backgroundColor = color;
+        });
+      document
+        .querySelector("#caja3")
+        .addEventListener("click", function (event) {
+          event.target.style.backgroundColor = color;
+        });
+      document
+        .querySelector("#caja4")
+        .addEventListener("click", function (event) {
+          event.target.style.backgroundColor = color;
+        });
+    </script>
+  </body>
+</html>
