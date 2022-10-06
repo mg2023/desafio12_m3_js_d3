@@ -9,7 +9,7 @@
   <body>
     <div id="ele1" style="background-color: green">hello</div>
 
-    <!-- script ORIGINAL -->
+    <!-- Inicio script ORIGINAL -->
     <!--     <script>
       function pintar() {
         ele = document.getElementById("ele1");
@@ -19,19 +19,22 @@
       ele = document.getElementById("ele1");
 
       ele.addEventListener("click", pintar);
-    </script> -->
+    </script>   -->
+    <!-- FIN script ORIGINAL -->
 
-    <!-- script para el punto 3.1 -->
-    <!--     
-    <script>
+    <!-- INICIO script para el punto 3.1 -->
+
+<!--     <script>
       ele = document.getElementById("ele1");
-      ele.addEventListener("click", function(){
-        ele.style.backgroundColor = "yellow"
-      } );      
+      ele.addEventListener("click", function () {
+        ele.style.backgroundColor = "yellow";
+        console.log("Script para el punto 3.1")
+      });
     </script> -->
+    <!-- FIN script para el punto 3.1 -->
 
-    <!-- script para el punto 3.2 -->
-    <!--        <script>
+    <!-- INICIO script para el punto 3.2 -->
+<!--     <script>
       function pintar(color){
         ele = document.getElementById("ele1");
         ele.style.backgroundColor = color;
@@ -39,9 +42,12 @@
 
       ele = document.getElementById("ele1");
 
-      ele.addEventListener("click", ()=> { pintar("yellow");}); 
-
+      ele.addEventListener("click", ()=> { 
+        pintar("yellow");
+        console.log("Script para el punto 3.2")
+      }); 
     </script>  -->
+    <!-- FIN script para el punto 3.2 -->
 
     <script src="./assets/js/script.js"></script>
   </body>
